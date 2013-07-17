@@ -4,11 +4,11 @@ settings = {
 
             UIApplicationExitsOnSuspend = false,
 
-            FacebookAppID = "579849992065331",
+            FacebookAppID = "123123123123123123",
 
             CFBundleURLTypes = {
                 {
-                CFBundleURLSchemes = { "fb579849992065331", }
+                CFBundleURLSchemes = { "fb123123123123123123", }
                 }
             }
         }
