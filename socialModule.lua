@@ -115,7 +115,7 @@ example: social.sendMail("test@test.com","This is my subject","This is my messag
 
 local social = {}
 
-local fbAppID = "579849992065331"
+local fbAppID = "123123123123123123"
 
 local facebook  = require "facebook"
 local tweetOptions
@@ -195,9 +195,6 @@ function social.sendfbPostImage(folder,imageName,message)
 	local newFolder 	= folder
 	 
 	function social.postNewImage(messageParam,folder,Image)
-		print("Message: "..messageParam)
-		print(folder)
-		print("Image :"..Image)
 		
 		local attachment = {
 		        message = messageParam,
@@ -338,9 +335,6 @@ function social.sendMailAppCapture(group,image,mailTo,mailSubject,mailMessage)
 	}
 	function social.goMailNative(mailTo,subjectTo,mailMessage)
 		native.showPopup("mail", mailOptions)
-		print(newMail)
-		print(newTo)
-		print(newSubject)
 	end	
 
 	local nativeTimer = timer.performWithDelay(100,social.goMailNative)
